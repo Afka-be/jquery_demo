@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fonctions Jquery</title>
+<style type="text/css">
+    #carre {
+        background-color:red;
+        width:100px;
+        height:100px;
+    }    
+    #menu {
+        padding:0px;
+    }
+    #menu li {
+        float:left;
+        width:120px;
+        height:30px;
+        border: solid 1px white;
+        text-align:center;
+        list-style-type: none;
+        background-color:darkgray;
+        border-radius:10px;
+    }
+    #menu li:nth-child(2) {
+        margin:0px 10px;
+    }
+    #menu a {
+        text-decoration: none;
+        padding:0px 10px;
+        line-height:30px;
+        display:block;
+        color:white;
+    }
+    #menu li:hover {
+        opacity: 0.7;
+        background-color:firebrick;
+        -webkit-transition: all 300ms;
+        -o-transition: all 300ms;
+        transition: all 300ms;
+    }
+    
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="git_exo.js"></script>
+
+</head>
+
+<body>
+<h1>Scripts jquery</h1>
+<div id="carre"></div>
+<ul id="menu">
+    <li><a class="move" href="#">Bouger</a></li>
+    <li><a class="change" href="#">Changer</a></li>
+    <li><a class="vision" href="#">Disparaitre</a></li>
+</ul>
+</body>
+
+</html>
