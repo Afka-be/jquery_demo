@@ -40,5 +40,17 @@ $(document).ready(function() {
             $("#carre").addClass('carre_style');
         } 
     });
+    
+    $(".vision").click(function() {
+        var clicks = $(this).data('clicks');
+        if (clicks) {
+            $("#carre").animate({opacity:"0"});
+            $(".vision").text("Apparaitre");
+        } else {
+            $("#carre").animate({opacity:"1"});
+            $(".vision").text("Disparaitre");
+        }
+        $(this).data("clicks", !clicks);
+    });
 
 });
