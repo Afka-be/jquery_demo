@@ -4,11 +4,18 @@
 <meta charset="UTF-8">
 <title>Fonctions Jquery</title>
 <style type="text/css">
+    .container {
+        width:600px;
+        background:#ececec;
+    }
     #carre {
         background-color:red;
         width:100px;
         height:100px;
     }    
+    .carre_style {
+        background-color:green !important;
+    }
     #menu {
         padding:0px;
     }
@@ -42,18 +49,19 @@
     
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="git_exo.js"></script>
-
 </head>
 
 <body>
 <h1>Scripts jquery</h1>
-<div id="carre"></div>
+<div class="container">
+    <div id="carre"></div>
+</div>
 <ul id="menu">
     <li><a class="move" href="#">Bouger</a></li>
     <li><a class="change" href="#">Changer</a></li>
     <li><a class="vision" href="#">Disparaitre</a></li>
 </ul>
+<script src="git_exo.js"></script>
 </body>
 
 </html>
